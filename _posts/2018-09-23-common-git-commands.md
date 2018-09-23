@@ -6,7 +6,7 @@ categories: jekyll update
 ---
 ## Installation
 - Windows
- Download from https://git-scm.com/
+ Download from <https://git-scm.com/>
 - Linux
 
 ```
