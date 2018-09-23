@@ -5,9 +5,8 @@ date:   2018-09-23 16:05:03 +0800
 categories: jekyll update
 ---
 ## Installation
-- Windows
- Download from <https://git-scm.com/>
-- Linux
+- Windows: Download from <https://git-scm.com/>
+- Linux:
 
 ```
 $ sudo apt-get update
@@ -83,19 +82,17 @@ $ git init <directory>               # create an empty project
 <tr><td>head@{0}</td><td>current HEAD</td></tr>
 <tr><td>head@{1}</td><td>previous HEAD</td></tr>
 <tr><td>head@{2}</td><td>previous of previous HEAD</td></tr>
-<tr><td>head@{1}\~2^3~1</td><td> 1st parent of 3rd parent of </br> 1st parent of 1st parent of previous HEAD</td></tr>
+<tr><td>head@{1}~2^3~1</td><td> 1st parent of 3rd parent of 1st parent of 1st parent of previous HEAD</td></tr>
 </table>
 
 > Check [gitglossary](https://git-scm.com/docs/gitglossary) for more information.
 
 #### Add
-- `.gitignore`
-Not all the file in the project need to be tracked.
+- `.gitignore`: Not all the file in the project need to be tracked.
 
 >For more `.gitignore` examples, see [here](https://github.com/github/gitignore).
 
-- `.gitkeep` and `.keep`
-Git doesn't track empty directories, so some project will add `.gitkeep` or `.keep` file.
+- `.gitkeep` and `.keep`: Git doesn't track empty directories, so some project will add `.gitkeep` or `.keep` file.
 
 ```
 $ git add --all
@@ -196,12 +193,12 @@ $ git cherry-pick <tree-ish>...      # current↑...
 ```
 #### Stash
 ```
-$ git stash                   # (1, 2) → stash
-$ git stash -u                # (1, 2) → stash, include untracked
-$ git stash push              # (1, 2) → stash            
-$ git stash apply             # (1, 2) ← stash
-$ git stash drop              # delete stash
-$ git stash pop               # apply and drop
+$ git stash                      # (1, 2) → stash
+$ git stash -u                   # (1, 2) → stash, include untracked
+$ git stash push                 # (1, 2) → stash            
+$ git stash apply                # (1, 2) ← stash
+$ git stash drop                 # delete stash
+$ git stash pop                  # apply and drop
 ```
 #### Remote
 ```
@@ -233,11 +230,11 @@ git archive -o latest.zip <tree-ish>
 ## References
 1. [Git \- Reference](https://git-scm.com/docs)
 1. [Git 教學 \- Git 書 \- 為你自己學 Git \| 高見龍](https://gitbook.tw/)
-1. [[Git] Reset \- mixed, hard and soft \|搞搞就懂 \- 點部落](https://dotblogs.com.tw/wasichris/2016/04/29/225157)
+1. [[Git] Reset \- mixed, hard and soft \| 搞搞就懂 \- 點部落](https://dotblogs.com.tw/wasichris/2016/04/29/225157)
 1. [github初學者 使用筆記 ~ Return to laughter](https://self.jxtsai.info/2015/11/github.html)
-1. [Git 初學筆記 \- 指令操作教學 \|Tsung's Blog](https://blog.longwin.com.tw/2009/05/git-learn-initial-command-2009/)
-1. [Git 初學筆記 \- 實作測試 \|Tsung's Blog](https://blog.longwin.com.tw/2009/05/git-learn-test-command-2009/)
-1. [5.2 代碼回滾：Reset、Checkout、Revert：Reset、Checkout、Revert 的選擇](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
+1. [Git 初學筆記 \- 指令操作教學 \| Tsung's Blog](https://blog.longwin.com.tw/2009/05/git-learn-initial-command-2009/)
+1. [Git 初學筆記 \- 實作測試 \| Tsung's Blog](https://blog.longwin.com.tw/2009/05/git-learn-test-command-2009/)
+1. [5.2 代碼回滾：Reset、Checkout、Revert 的選擇](https://github.com/geeeeeeeeek/git-recipes/wiki/5.2-%E4%BB%A3%E7%A0%81%E5%9B%9E%E6%BB%9A%EF%BC%9AReset%E3%80%81Checkout%E3%80%81Revert-%E7%9A%84%E9%80%89%E6%8B%A9)
 1. [Working with dates in Git \- Alex Peattie](https://alexpeattie.com/blog/working-with-dates-in-git)
-1. [Git指令整理 \- 柏熒的博客 \|BY Blog](http://qiubaiying.top/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/)
+1. [Git指令整理 \- 柏熒的博客 \| BY Blog](http://qiubaiying.top/2017/02/15/Git%E6%8C%87%E4%BB%A4%E6%95%B4%E7%90%86/)
 1. [git archive \- What does tree-ish mean in Git? \- Stack Overflow](https://stackoverflow.com/questions/4044368/what-does-tree-ish-mean-in-git)
