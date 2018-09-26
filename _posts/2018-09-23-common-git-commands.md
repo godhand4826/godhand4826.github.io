@@ -204,7 +204,7 @@ $ git stash pop                  # apply and drop
 ```
 $ git remote -v                      # Show remote
 $ git remote add <name> <url>        # Add remote
-$ git remote remove <name> <url>     # Remove remote
+$ git remote remove <name>           # Remove remote
 $ git remote update                  # 4 → 3, all remote
 $ git fetch --all                    # 4 → 3, all remote
 $ git fetch                          # 4 → 3, only update current branch
