@@ -2,7 +2,7 @@
 layout: post
 title:  "Common Git Commands"
 date:   2018-09-23 16:05:03 +0800
-categories: jekyll update
+categories: git
 ---
 ## Installation
 - Windows: Download from <https://git-scm.com/>
@@ -17,7 +17,7 @@ $ sudo apt-get install git
 $ which git                          # => /mingw64/bin/git
 $ git --version                      # => git version 2.18.0.windows.1
 ```
-## Config
+## Configuration
 #### Edit 
 ```
 $ git config --global <name> <value> # Add a setting
