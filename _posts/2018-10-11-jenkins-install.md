@@ -33,7 +33,7 @@ $ sudo service jenkins restart
 - the default account is __admin__ and the password is at `/var/lib/jenkins/secrets/initialAdminPassword`
 
 ## CLI
-#### Download executable
+#### Downloading the client
 - Go to [127.0.0.1:8082/jnlpJars/jenkins-cli.jar]() to download the `jenkins-cli.jar`.
 
 #### ssh authentication (optional)
