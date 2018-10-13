@@ -4,7 +4,7 @@ title:  "Windows Subsystem for Linux"
 date:   2018-10-12 14:46:00 +0800
 categories: wsl
 ---
-## wsl
+## setup WSL
 - Run __PowerShell__ as admin
 
 ```
@@ -14,7 +14,7 @@ $ Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem
 - Download __Ubuntu__ form __Microsoft Store__
 - Install and set username and password
 
-## ZSH
+## setup ZSH
 ```
 $ sudo apt-get update
 $ sudo apt-get install zsh
@@ -22,7 +22,7 @@ $ which zsh
 /usr/bin/zsh
 $ chsh -s /usr/bin/zsh
 ```
-## Oh My ZSH
+## setup Oh My ZSH
 ```
 $ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 ```
