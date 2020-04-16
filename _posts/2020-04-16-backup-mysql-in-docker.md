@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Backup MySQL in Docker"
-date:   2020-04-20 16:05:03 +0800
+date:   2020-04-15 16:05:03 +0800
 categories: mysql
 ---
 ## Backup
