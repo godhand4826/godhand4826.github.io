@@ -11,11 +11,11 @@ categories: utf
 - 用來區別 `big-endian` 與 `little-endian`
 
 ## utf8
-- 每個字符佔據 `1~4 bytes`, 可表示所有字元
+- 每個字符佔據 `1~4 bytes`, 可表示所有字符
 - 每個字符的第 `frist byte` 可以得知此字符總共佔據多少個 `byte`
-    - `1 byte` 字符 (U+0000 ~ U+007F): 0xxxxxxx (其實就是`ascii`)
-    - `2 bytes` 字符 (U+0080 ~ U+07FF): 110xxxxx 10xxxxxx
-    - `3 bytes` 字符 (U+0800 ~ U+FFFF): 1110xxxx 10xxxxxx 10xxxxxx
+    - `1 byte ` 字符 (U+00000 ~ U+00007F): 0xxxxxxx (其實就是`ascii`)
+    - `2 bytes` 字符 (U+00080 ~ U+0007FF): 110xxxxx 10xxxxxx
+    - `3 bytes` 字符 (U+00800 ~ U+00FFFF): 1110xxxx 10xxxxxx 10xxxxxx
     - `4 bytes` 字符 (U+10000 ~ U+10FFFF): 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
 - `utf8` 的 `BOM` 為 `0xEF 0xBB 0xBF`
 - `utf8` 解碼時, 一次只解讀 `1 byte`, 所以並不會受 `Endianness` 所影響, 所以不需 `BOM`, 就可以正確解讀
@@ -23,13 +23,16 @@ categories: utf
 - 計算字串總長度, 或是取第N個字符, 因為不等長的特性所以都需從頭走訪一遍
 
 ## uft16
-- 每個字符都固定佔據 `2 bytes`, 無法表示所有字元
+- 每個字符佔據 `2 bytes` 或 `4 bytes`, 可表示所有字符
+    - `2 bytes` 字符 (U+000000 ~ U+00D7FF, U+00E000 ~ U+00FFFF): xxxxxxxx xxxxxxxx
+    - `4 bytes` 字符 (U+010000 ~ U+10FFFF): 110110xx xxxxxxxx 110111xx xxxxxxxx
 - `utf16le` 的 `BOM` 為 `0xFF 0xFE`
 - `utf16be` 的 `BOM` 為 `0xFE 0xFF`
 - `utf16` 解讀時, 即使用錯 `Endianness` 也都會找到對應的字符, 所以必須有 `BOM`, 才能確保正確解讀
+- 計算字串總長度, 或是取第N個字符, 因為不等長的特性所以都需從頭走訪一遍
 
 ## uft32
-- 每個字符都固定佔據 `4 bytes`, 可表示所有字元
+- 每個字符都固定佔據 `4 bytes`, 可表示所有字符
 - `utf32le` 的 `BOM` 為 `0xFF 0xFE 0x00 0x00`
 - `utf32be` 的 `BOM` 為 `0x00 0x00 0xFE 0xFF`
 - `utf32` 解讀時, 即使用錯 `Endianness` 也都會找到對應的字符, 所以必須有 `BOM`, 才能確保正確解讀
