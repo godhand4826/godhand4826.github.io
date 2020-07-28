@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "UTF (Unicode Transformation Format)"
-date:   2018-09-23 16:05:03 +0800
+date:   2020-7-28 16:05:03 +0800
 categories: utf
 ---
 ## BOM
