@@ -17,6 +17,6 @@ yum install *.rpm
 apt depends --recurse -i vim | grep '^\w' | sort -u | xargs apt download
 tar zcvf vim.tgz *.deb
 # copy to offline machine
-tar zcvf vim.tgz
+tar zxvf vim.tgz
 dpkg -i *.deb
 ```
