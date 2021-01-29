@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "proxy with ssh"
+title:  "Forward proxy and reverse proxy via ssh"
 date:   2021-1-15 10:00:00 +0800
 categories: linux ssh
 ---
-# Forward proxy and reverse proxy via ssh
 ```bash
 # forward proxy
 #   request -> LOCAL -> SSH_SERVER -> TARGET

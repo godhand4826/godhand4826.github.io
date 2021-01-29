@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  "split file"
+title:  "Split file by size"
 date:   2021-01-29 16:05:03 +0800
 categories: linux split
 ---
-# Split file by size
 ```bash
 split -b 10M -d --additional-suffix=.part foo bar
 cat bar*.part > foo
